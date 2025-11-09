@@ -6,27 +6,7 @@
 <title>SkillPro Institute</title>
 <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<style type="text/tailwindcss">
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .scroll-animate {
-            animation: fadeIn 0.8s ease-out forwards;
-            animation-timeline: view();
-            animation-range-start: cover 0%;
-            animation-range-end: cover 20%;
-        }
-        :root {
-            --accent-color: #FF6B00;
-        }
-    </style>
+<link href="style.css" rel="stylesheet"/>
 <script>
         tailwind.config = {
             darkMode: "class",
