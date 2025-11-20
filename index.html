@@ -1,123 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillPro Institute</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>SkillPro Institute</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="style.css" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1173d4",
+                        accent: 'var(--accent-color)',
+                        "background-light": "#ffffff",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        body: ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "0.75rem",
+                        xl: "1rem",
+                        full: "9999px"
+                    },
+                },
+            },
+        };
+    </script>
 </head>
-<body>
-    <header>
-        <div class="logo">SkillPro Institute</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="auth-buttons">
-            <button class="login">Login</button>
-            <button class="signup">Sign Up</button>
-        </div>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome to SkillPro Institute</h1>
-                <p>Your journey to knowledge and skills starts here.</p>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search for courses...">
-                    <button>Search</button>
-                </div>
-            </div>
-        </section>
-        <section class="featured-courses">
-            <h2>Featured Courses</h2>
-            <div class="course-cards">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Course Image">
-                    <h3>Course Title</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button>Learn More</button>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Course Image">
-                    <h3>Course Title</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button>Learn More</button>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Course Image">
-                    <h3>Course Title</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button>Learn More</button>
-                </div>
-            </div>
-        </section>
-        <section class="testimonials">
-            <h2>What Our Students Say</h2>
-            <div class="testimonial-cards">
-                <div class="testimonial-card">
-                    <p>"The courses are amazing! I've learned so much."</p>
-                    <span>- John Doe</span>
-                </div>
-                <div class="testimonial-card">
-                    <p>"A great platform to enhance your skills."</p>
-                    <span>- Jane Smith</span>
-                </div>
-            </div>
-        </section>
-        <section class="why-choose-us">
-            <h2>Why Choose Us?</h2>
-            <div class="features">
-                <div class="feature-item">
-                    <img src="https://via.placeholder.com/50x50" alt="Icon">
-                    <h3>Expert Instructors</h3>
-                    <p>Learn from industry experts with years of experience.</p>
-                </div>
-                <div class="feature-item">
-                    <img src="https://via.placeholder.com/50x50" alt="Icon">
-                    <h3>Flexible Learning</h3>
-                    <p>Study at your own pace with our flexible course schedules.</p>
-                </div>
-                <div class="feature-item">
-                    <img src="https://via.placeholder.com/50x50" alt="Icon">
-                    <h3>Career Support</h3>
-                    <p>Get access to career counseling and job placement assistance.</p>
-                </div>
-            </div>
-        </section>
-        <section class="notices-events">
-            <h2>Notices & Events</h2>
-            <div class="notice-list">
-                <div class="notice-item">
-                    <h3>Upcoming Workshop on AI</h3>
-                    <p>Join us for an exciting workshop on Artificial Intelligence on 25th Dec 2024.</p>
-                </div>
-                <div class="notice-item">
-                    <h3>New Course Announcement</h3>
-                    <p>We are launching a new course on Data Science in the upcoming semester.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <h3>Contact Us</h3>
-                <p>Email: info@skillpro.com</p>
-                <p>Phone: +123 456 7890</p>
-            </div>
-            <div class="social-links">
-                <h3>Follow Us</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
-            </div>
-        </div>
-        <p class="copyright">&copy; 2024 SkillPro Institute. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+<body class="font-body bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md transition-all duration-300">
+<div class="container mx-auto px-6 sm:px-10">
+<div class="flex items-center justify-between whitespace-nowrap h-20">
+<div class="flex items-center gap-4 text-background-dark dark:text-background-light">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-background-dark dark:text-background-light text-2xl font-bold font-display">SkillPro Institute</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-300 text-base font-medium hover:text-accent dark:hover:text-accent transition-colors" href="#">Courses</a>
+<a class="text-slate-600 dark:text-slate-300 text-base font-medium hover:text-accent dark:hover:text-accent transition-colors" href="#">About Us</a>
+<a class="text-slate-600 dark:text-slate-300 text-base font-medium hover:text-accent dark:hover:text-accent transition-colors" href="#">Admissions</a>
+<a class="text-slate-600 dark:text-slate-300 text-base font-medium hover:text-accent dark:hover:text-accent transition-colors" href="#">Contact</a>
+</nav>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-accent text-white text-base font-bold shadow-lg hover:bg-accent/90 focus:outline-none focus:ring-4 focus:ring-accent/50 transition-all duration-300 transform hover:scale-105">
+<span class="truncate">Apply Now</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("assets/image1.jpg");'></div>
+<div class="absolute inset-0 bg-black/50"></div>
+<div class="relative container mx-auto max-w-7xl px-6 sm:px-10 py-48 md:py-64">
+<div class="flex flex-col gap-8 text-left max-w-4xl scroll-animate">
+<h1 class="text-white text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter font-display leading-tight">Empowering Careers,<br/>Shaping Futures</h1>
+<p class="text-white/90 text-lg md:text-xl max-w-2xl">
+                                SkillPro Institute offers industry-leading vocational training in ICT, Hotel Management, Plumbing, and Welding. Gain practical skills and achieve your career goals.
+                            </p>
+<div class="flex flex-wrap gap-4 mt-6">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-10 bg-accent text-white text-lg font-bold shadow-xl hover:bg-accent/90 focus:outline-none focus:ring-4 focus:ring-accent/50 transition-all duration-300 transform hover:scale-105">
+<span class="truncate">View Courses</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-10 bg-white/10 backdrop-blur-sm text-white text-lg font-bold shadow-xl hover:bg-white/20 focus:outline-none focus:ring-4 focus:ring-white/30 transition-all duration-300 transform hover:scale-105">
+<span class="truncate">Apply Now</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 sm:py-32 px-6 sm:px-10">
+<div class="container mx-auto max-w-7xl">
+<div class="text-center mb-16 scroll-animate">
+<h2 class="text-4xl md:text-5xl font-extrabold text-background-dark dark:text-background-light font-display tracking-tight">Featured Courses</h2>
+<p class="mt-4 text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">Hands-on training designed to get you job-ready. Explore our most popular programs.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="flex flex-col gap-4 group scroll-animate">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl" style='background-image: url("assets/image2.jpg");'></div>
+<div class="pt-2">
+<h3 class="text-xl font-bold text-background-dark dark:text-background-light font-display">ICT Fundamentals</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base mt-1">Build a strong foundation in information and communication technology.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group scroll-animate" style="animation-delay: 0.1s;">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl" style='background-image: url("assets/image3.jpg");'></div>
+<div class="pt-2">
+<h3 class="text-xl font-bold text-background-dark dark:text-background-light font-display">Culinary Arts Mastery</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base mt-1">Master culinary skills and hotel operations.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group scroll-animate" style="animation-delay: 0.2s;">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl" style='background-image: url("assets/image4.jpg");'></div>
+<div class="pt-2">
+<h3 class="text-xl font-bold text-background-dark dark:text-background-light font-display">Advanced Plumbing</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base mt-1">Learn advanced plumbing systems and installations.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group scroll-animate" style="animation-delay: 0.3s;">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl" style='background-image: url("assets/image5.jpg");'></div>
+<div class="pt-2">
+<h3 class="text-xl font-bold text-background-dark dark:text-background-light font-display">Precision Welding</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base mt-1">Develop expertise in various welding processes.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 sm:py-32 px-6 sm:px-10 bg-slate-50 dark:bg-slate-900/50">
+<div class="container mx-auto max-w-7xl">
+<div class="text-center mb-16 scroll-animate">
+<h2 class="text-4xl md:text-5xl font-extrabold text-background-dark dark:text-background-light font-display tracking-tight">Why Choose SkillPro?</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 mt-4 max-w-3xl mx-auto">We are committed to providing high-quality vocational training that prepares you for a successful career.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 p-8 rounded-xl bg-background-light dark:bg-slate-800/50 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1 scroll-animate">
+<div class="text-accent" data-icon="GraduationCap" data-size="40px">
+<svg fill="currentColor" height="40px" viewBox="0 0 256 256" width="40px" xmlns="http://www.w3.org/2000/svg">
+<path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-background-dark dark:text-background-light font-display">Industry-Relevant Curriculum</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base">Our courses are designed in collaboration with industry experts to ensure you learn the latest skills and techniques.</p>
+</div>
+<div class="flex flex-col gap-4 p-8 rounded-xl bg-background-light dark:bg-slate-800/50 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1 scroll-animate" style="animation-delay: 0.1s;">
+<div class="text-accent" data-icon="Briefcase" data-size="40px">
+<svg fill="currentColor" height="40px" viewBox="0 0 256 256" width="40px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-background-dark dark:text-background-light font-display">Experienced Instructors</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base">Learn from experienced professionals who are passionate about teaching and dedicated to your success.</p>
+</div>
+<div class="flex flex-col gap-4 p-8 rounded-xl bg-background-light dark:bg-slate-800/50 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1 scroll-animate" style="animation-delay: 0.2s;">
+<div class="text-accent" data-icon="UsersThree" data-size="40px">
+<svg fill="currentColor" height="40px" viewBox="0 0 256 256" width="40px" xmlns="http://www.w3.org/2000/svg">
+<path d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-background-dark dark:text-background-light font-display">Career Support Services</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base">We provide comprehensive career support, including resume writing, interview preparation, and job placement assistance.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 sm:py-32 px-6 sm:px-10">
+<div class="container mx-auto max-w-7xl">
+<div class="text-center mb-16 scroll-animate">
+<h2 class="text-4xl md:text-5xl font-extrabold text-background-dark dark:text-background-light font-display tracking-tight">Student Success Stories</h2>
+<p class="mt-4 text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">Our graduates are building successful careers. See where a SkillPro education can take you.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 group scroll-animate">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-2xl" style='background-image: url("assets/image6.jpg");'></div>
+<div class="pt-2">
+<h3 class="text-xl font-bold text-background-dark dark:text-background-light font-display">Aisha's Journey to ICT Excellence</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base mt-1">Aisha, an ICT graduate, now works as a software developer at a leading tech company.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group scroll-animate" style="animation-delay: 0.1s;">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-2xl" style='background-image: url("assets/image7.jpg");'></div>
+<div class="pt-2">
+<h3 class="text-xl font-bold text-background-dark dark:text-background-light font-display">Rohan's Welding Career Takes Off</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base mt-1">Rohan, a welding graduate, secured a job at a major construction firm.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group scroll-animate" style="animation-delay: 0.2s;">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-2xl" style='background-image: url("assets/image8.jpg");'></div>
+<div class="pt-2">
+<h3 class="text-xl font-bold text-background-dark dark:text-background-light font-display">Priya's Hotel Management Success</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base mt-1">Priya, a hotel management graduate, is thriving in a top-rated resort.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 sm:py-32 px-6 sm:px-10 bg-slate-50 dark:bg-slate-900/50">
+<div class="container mx-auto max-w-7xl">
+<div class="text-center mb-16 scroll-animate">
+<h2 class="text-4xl md:text-5xl font-extrabold text-background-dark dark:text-background-light font-display tracking-tight">Notices &amp; Events</h2>
+<p class="mt-4 text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">Stay up-to-date with the latest happenings at SkillPro Institute.</p>
+</div>
+<div class="space-y-16">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 items-center scroll-animate">
+<div class="flex flex-col gap-4">
+<p class="text-base font-bold text-accent">NOTICE</p>
+<h3 class="text-2xl font-bold text-background-dark dark:text-background-light font-display">Enrollment for the next ICT Fundamentals course is now open!</h3>
+<p class="text-slate-600 dark:text-slate-400">Limited seats available. Apply before July 15th.</p>
+<button class="flex self-start min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-accent text-white text-base font-bold shadow-lg hover:bg-accent/90 focus:outline-none focus:ring-4 focus:ring-accent/50 transition-all duration-300 transform hover:scale-105">
+<span class="truncate">Apply Now</span>
+</button>
+</div>
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl shadow-lg" style='background-image: url("assets/image9.jpg");'></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 items-center scroll-animate">
+<div class="flex flex-col gap-4 md:order-2">
+<p class="text-base font-bold text-accent">EVENT</p>
+<h3 class="text-2xl font-bold text-background-dark dark:text-background-light font-display">SkillPro Career Fair 2024</h3>
+<p class="text-slate-600 dark:text-slate-400">Connect with leading employers and explore job opportunities. August 10th, 9 AM - 4 PM.</p>
+<button class="flex self-start min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-accent/20 dark:bg-accent/20 text-accent font-bold text-base hover:bg-accent/30 dark:hover:bg-accent/30 transition-all duration-300 transform hover:scale-105">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl shadow-lg md:order-1" style='background-image: url("assets/image10.jpg");'></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-900 text-slate-300">
+<div class="container mx-auto max-w-7xl px-6 sm:px-10 py-16">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-8">
+<div class="flex flex-col gap-4 items-center md:items-start">
+<div class="flex items-center gap-4 text-white">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-2xl font-bold font-display">SkillPro Institute</h2>
+</div>
+<p class="text-slate-400 text-base max-w-sm text-center md:text-left">Empowering careers and shaping futures through vocational excellence.</p>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+<a class="text-slate-300 text-base font-medium hover:text-accent transition-colors" href="#">Courses</a>
+<a class="text-slate-300 text-base font-medium hover:text-accent transition-colors" href="#">About Us</a>
+<a class="text-slate-300 text-base font-medium hover:text-accent transition-colors" href="#">Admissions</a>
+<a class="text-slate-300 text-base font-medium hover:text-accent transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center justify-center gap-4">
+<a class="text-slate-400 hover:text-accent transition-colors" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0h-21.35C.59 0 0 .59 0 1.325v21.35C0 23.41.59 24 1.325 24H12.82v-9.29H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.735 0 1.325-.59 1.325-1.325V1.325C24 .59 23.41 0 22.675 0z"></path></svg>
+</a>
+<a class="text-slate-400 hover:text-accent transition-colors" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.441c-3.118 0-3.486.012-4.71.068-2.61.12-3.794 1.309-3.912 3.912C3.314 8.723 3.302 9.091 3.302 12s.012 3.277.068 4.71c.118 2.603 1.301 3.793 3.912 3.912 1.224.056 1.592.068 4.71.068 3.118 0 3.486-.012 4.71-.068 2.603-.119 3.793-1.309 3.912-3.912.056-1.224.068-1.592.068-4.71s-.012-3.277-.068-4.71c-.119-2.603-1.309-3.793-3.912-3.912-1.224-.056-1.592.068-4.71-.068zM12 6.837a5.163 5.163 0 100 10.326 5.163 5.163 0 000-10.326zm0 8.468a3.306 3.306 0 110-6.612 3.306 3.306 0 010 6.612zm4.965-7.727a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"></path></svg>
+</a>
+<a class="text-slate-400 hover:text-accent transition-colors" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="text-slate-400 hover:text-accent transition-colors" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-slate-800 mt-8 pt-8 flex flex-col sm:flex-row-reverse items-center justify-between gap-4">
+<div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+<a class="text-slate-400 text-sm hover:text-accent transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-400 text-sm hover:text-accent transition-colors" href="#">Terms of Service</a>
+</div>
+<p class="text-center text-sm text-slate-500">© 2024 SkillPro Institute. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
