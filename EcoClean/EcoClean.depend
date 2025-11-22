@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1763826692 source:c:\users\hasitha\downloads\fip\ecoclean\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"data.cpp"
+	"functions.cpp"
+	"file_handler.cpp"
+	"users.cpp"
+	"customers.cpp"
+	"orders.cpp"
+	"auth.cpp"
+
+1763826874 c:\users\hasitha\downloads\fip\ecoclean\data.cpp
+	<string>
+
+1763826885 c:\users\hasitha\downloads\fip\ecoclean\functions.cpp
+	<iostream>
+	<string>
+
+1763826896 c:\users\hasitha\downloads\fip\ecoclean\file_handler.cpp
+	<fstream>
+	<string>
+
+1763826910 c:\users\hasitha\downloads\fip\ecoclean\users.cpp
+	<iostream>
+	<string>
+
+1763826924 c:\users\hasitha\downloads\fip\ecoclean\customers.cpp
+	<iostream>
+	<string>
+
+1763826927 c:\users\hasitha\downloads\fip\ecoclean\orders.cpp
+	<iostream>
+	<string>
+
+1763826929 c:\users\hasitha\downloads\fip\ecoclean\auth.cpp
+	<iostream>
+	<string>
+
+1763826874 source:c:\users\hasitha\downloads\fip\ecoclean\data.cpp
+	<string>
+
+1763826885 source:c:\users\hasitha\downloads\fip\ecoclean\functions.cpp
+	<iostream>
+	<string>
